@@ -1,0 +1,101 @@
+
+body {
+   background-color:#548687;
+   text-align:center;
+}
+.container {
+   height:70vh;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   
+
+}
+
+.game{
+   height:60vmin;;
+   width:60vmin;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:center;
+   align-items:center;
+   
+   
+}
+.box {
+   height:18vmin;
+   width:18vmin;
+   margin:0.8vmin;
+   border-radius:1rem;
+   border:none;
+   box-shadow:0 0 1rem rgba(0,0,0,0.5);
+   font-size:6vmin;
+   color:#b0413e;
+   background:lightgreen;
+}
+
+#reset {
+  font-size:5vmin;
+  background:black;
+  color:#fff;
+  border-radius:4%;
+  border:none;
+  height:12vh;
+  width:60vw;
+}
+
+#new-btn{
+
+font-size:5vmin;
+  background-color:#191913;
+  color:#fff;
+  border-radius:0.5rem;
+  border:none;
+  height:15vh;
+  width:70vw;
+
+}
+
+#msg{
+  background: linear-gradient(45deg, red,blue,green); /* Define your gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  
+  font-size:8vmin;
+  animation:anime 4s linear infinite;
+  
+}
+
+@keyframes anime{
+   0%{
+     background: linear-gradient(45deg, red,blue,green); /* Define your gradient colors */
+     -webkit-background-clip: text; /* Clip the background to the text */
+     -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+     
+   }
+    50%{
+    background: linear-gradient(90deg, red,blue,green); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    
+    
+    
+    }
+
+}
+
+.msg-box {
+    height: 100vh;
+    display: block;
+    transition: height 0.5s ease, opacity 0.5s ease; /* Smooth transition for height and opacity */
+    overflow: hidden; /* Hide overflowing content */
+    opacity: 1; /* Initially visible */
+}
+
+.hide {
+    height: 0; /* Reduce height to 0 when hidden */
+    opacity: 0; /* Fade out the element */
+}
+
+
+
